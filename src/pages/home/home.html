@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+     <ion-segment [(ngModel)]="example" color="primary">
+      <ion-segment-button value="s1" (click)="changeSlide()">
+        Page 1
+      </ion-segment-button>
+      <ion-segment-button value="s2" (click)="changeSlide1()">
+        Page 2
+      </ion-segment-button>
+    </ion-segment>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+	<ion-slides (ionSlideDidChange)="slideChanged()">
+
+		<ion-slide>
+			<h1> Holaaaa 1 </h1>
+		</ion-slide>
+
+		<ion-slide>
+			<h1> Holaaaa 2 </h1>
+		</ion-slide>
+
+	</ion-slides>
+ 
+</ion-content>
